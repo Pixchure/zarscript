@@ -234,8 +234,44 @@
 
 
   <li class="md-nav__item">
+    <a href="troubleshooting/" title="Notes" class="md-nav__link">
+      Notes
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="dependency/" title="Dependencies" class="md-nav__link">
+      Dependencies
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
     <a href="modules/" title="Module Manager" class="md-nav__link">
       Module Manager
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="entity/" title="Entity" class="md-nav__link">
+      Entity
     </a>
   </li>
 
@@ -370,7 +406,7 @@
                   <h1>Home</h1>
                 
                 <h2 id="overview">Overview</h2>
-<p>An easy to use scripting API for Minecraft. Made by Zarzel and currently only in the beta builds of his client: <a href="https://astolfo.lgbt">astolfo.lgbt</a>. If you don't already understand how Minecraft works, I suggest you look through MCP a little bit first so you can understand the structure of ZarScript.</p>
+<p>An easy to use scripting API for Minecraft. Made by Zarzel and currently only in his client: <a href="https://astolfo.lgbt">astolfo.lgbt</a>. If you don't already understand how Minecraft works, I suggest you look through MCP a little bit first so you can understand the structure of ZarScript.</p>
 <h2 id="script-structure">Script structure</h2>
 <p>All scripts must have 2 global variables named 'scriptName' and 'scriptDescription. Your modules are defined as functions and you must register and unregister an instance of them in 'onEnable' and 'onDisable'. All modules must have the function 'getName'.</p>
 <div class="codehilite"><pre><span></span><code><span class="kd">var</span> <span class="nx">scriptName</span> <span class="o">=</span> <span class="s2">&quot;My Script&quot;</span><span class="p">;</span>
@@ -381,6 +417,7 @@
         <span class="k">return</span> <span class="s2">&quot;My script&quot;</span><span class="p">;</span>
     <span class="p">};</span>
 <span class="p">}</span>
+
 <span class="kd">var</span> <span class="nx">module</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Module</span><span class="p">();</span>
 
 <span class="k">this</span><span class="p">.</span><span class="nx">onEnable</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
